@@ -73,10 +73,10 @@ h1 {
 p {
   font-size: small;
   font-weight: 500;
-  line-height: 1.7;
+  line-height: 1.8;
   color: var(--Desaturated);
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   main {
     margin-top: 0.5em;
     max-width: 375px;
@@ -93,6 +93,8 @@ p {
   .text-info {
     background-color: white;
     padding: 2em 2em 0em;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
   }
   .text-info h1 {
     margin-right: 0.5em;
@@ -108,10 +110,7 @@ p {
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    padding: 1.5em 2em 1em;
-    background-color: white;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
+    padding: 1.5em 0em 1em;
   }
   .avatar-info p {
     max-width: 125px;
@@ -123,12 +122,71 @@ p {
   .avatar-info span {
     color: var(--Grayish-Blue);
     font-weight: 500;
+    word-spacing: 0.1em;
   }
   .avatar-info img {
     border-radius: 50%;
-    width: 2.5em;
+    width: 2.8em;
   }
   .share {
     padding-left: 5em;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  main {
+    margin-top: 0.5em;
+    display: flex;
+    max-width: 800px;
+  }
+
+  .image-section img {
+    object-fit: fill;
+    object-position: center;
+    max-width: 300px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+  }
+
+  .text-info {
+    background-color: white;
+    padding: 2em 2em 0em;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+
+  .text-info p {
+    padding: 1em 0em;
+  }
+
+  .text-info-position {
+    max-width: 350px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+  .avatar-info {
+    margin-top: 2em;
+    display: flex;
+    align-items: center;
+  }
+  .avatar-info p {
+    padding-left: 1em;
+    color: var(--Very-Blue);
+    font-weight: 700;
+  }
+  .avatar-info span {
+    display: block;
+    color: var(--Light-Grayish);
+    font-weight: 500;
+  }
+  .share {
+    margin-left: 10em;
+  }
+  .avatar-info img {
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
   }
 }
