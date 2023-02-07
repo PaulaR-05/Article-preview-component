@@ -1,3 +1,11 @@
+:root {
+  --Very-Blue: hsl(217, 19%, 35%);
+  --Desaturated: hsl(214, 17%, 51%);
+  --Grayish-Blue: hsl(212, 23%, 69%);
+  --Light-Grayish: hsl(210, 46%, 95%);
+  --font-family: "Manrope", sans-serif;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -19,6 +27,7 @@
 html,
 body {
   height: 100%;
+  font-family: var(--font-family);
 }
 
 body {
@@ -53,10 +62,24 @@ h5,
 h6 {
   overflow-wrap: break-word;
 }
+
+h1 {
+  font-size: medium;
+  font-weight: 700;
+  line-height: 1.5;
+  color: var(--Very-Blue);
+}
+
+p {
+  font-size: small;
+  font-weight: 500;
+  line-height: 1.7;
+  color: var(--Desaturated);
+}
 @media only screen and (max-width: 600px) {
   main {
     margin-top: 0.5em;
-    max-width: 400px;
+    max-width: 375px;
     display: flex;
     flex-direction: column;
     border-radius: 15px;
@@ -71,20 +94,35 @@ h6 {
     background-color: white;
     padding: 2em 2em 0em;
   }
+  .text-info h1 {
+    margin-right: 0.5em;
+  }
+  .text-info p {
+    text-align: left;
+    font-size: small;
+    padding-top: 1em;
+  }
 
   .avatar-info {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    padding: 1em 2em 1em;
+    padding: 1.5em 2em 1em;
     background-color: white;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
   }
   .avatar-info p {
-    max-width: 130px;
-    margin-left: 0.5em;
+    max-width: 125px;
+    margin-left: 1em;
+    color: var(--Very-Blue);
+    font-weight: 700;
+  }
+
+  .avatar-info span {
+    color: var(--Grayish-Blue);
+    font-weight: 500;
   }
   .avatar-info img {
     border-radius: 50%;
