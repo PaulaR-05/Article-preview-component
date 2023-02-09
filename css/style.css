@@ -85,7 +85,7 @@ p {
     border-radius: 10px;
   }
   .image-section {
-    height: 250px;
+    height: 225px;
   }
   .image-section {
     border-top-right-radius: 10px;
@@ -151,7 +151,7 @@ p {
 
   .social {
     background-color: var(--Very-Blue);
-    width: 120%;
+    width: 121%;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     margin-left: -31px;
@@ -181,6 +181,7 @@ p {
     border-radius: 50%;
     padding: 0.5em;
   }
+
   .hidden {
     display: none;
   }
@@ -202,12 +203,16 @@ p {
   }
 
   .text-info {
+    text-align: left;
     background-color: white;
-    padding: 2em 2em 0em;
+    padding: 2em 3em 0em 2em;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
   }
-
+  .text-info h1 {
+    line-height: 1.7;
+    font-weight: 700;
+  }
   .text-info p {
     padding: 1em 0em;
   }
@@ -227,11 +232,9 @@ p {
   .avatar-info img {
     margin-top: 1em;
   }
-
   .share-icon {
     margin-left: 9em;
     background-color: var(--Light-Grayish);
-
     margin-top: 1em;
     padding: 0.8em;
     border-radius: 50%;
@@ -241,16 +244,64 @@ p {
     flex-direction: column;
     margin-left: 1em;
   }
+
+  .avatar-author a {
+    text-decoration: none;
+  }
+  .avatar-author p {
+    text-decoration: none;
+    color: var(--Very-Blue);
+    font-weight: 700;
+  }
   .avatar-author span {
     margin-top: -12px;
+    color: var(--Light-Grayish);
+    font-size: 13px;
   }
 
   .share {
     margin-left: 10em;
   }
   .avatar-info img {
-    width: 2em;
-    height: 2em;
+    width: 2.5em;
+    height: 2.5em;
     border-radius: 50%;
+  }
+
+  .share-icontwo {
+    display: none;
+  }
+  .social {
+    transform: translate(222px, -110px);
+    background-color: var(--Very-Blue);
+    width: 70%;
+    border-radius: 5px;
+    padding: 0.1em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .svg {
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+  }
+  .social p {
+    text-transform: uppercase;
+    margin-left: 1em;
+    letter-spacing: 4px;
+  }
+
+  .triangulo-para-baixo {
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 15px solid hsl(217, 19%, 35%);
+    transform: translate(-82px, 160px);
+  }
+  .hidden {
+    display: none;
   }
 }
