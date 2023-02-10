@@ -94,7 +94,6 @@ p {
   .text-info {
     background-color: white;
     padding: 2em 2em 0em;
-
     border-bottom-right-radius: 15px;
     border-bottom-left-radius: 15px;
   }
@@ -165,7 +164,10 @@ p {
     justify-content: space-around;
     align-items: center;
     cursor: pointer;
+    transform: translate(0px, -60px);
+    margin-bottom: -60px;
   }
+
   .social p {
     text-transform: uppercase;
     letter-spacing: 0.5em;
