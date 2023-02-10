@@ -147,6 +147,11 @@ p {
     margin-top: 1em;
     padding: 0.8em;
     border-radius: 50%;
+    cursor: pointer;
+  }
+
+  .share-icon:hover {
+    background-color: var(--Grayish-Blue);
   }
 
   .social {
@@ -159,6 +164,7 @@ p {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    cursor: pointer;
   }
   .social p {
     text-transform: uppercase;
@@ -166,6 +172,10 @@ p {
     margin-top: -10px;
     color: var(--Grayish-Blue);
     font-weight: 500;
+  }
+
+  .social p:hover {
+    color: white;
   }
   .svg {
     padding-right: 1em;
@@ -238,6 +248,7 @@ p {
     margin-top: 1em;
     padding: 0.8em;
     border-radius: 50%;
+    cursor: pointer;
   }
   .avatar-author {
     display: flex;
@@ -262,6 +273,9 @@ p {
   .share {
     margin-left: 10em;
   }
+  .share-icon:hover {
+    background-color: var(--Grayish-Blue);
+  }
   .avatar-info img {
     width: 2.5em;
     height: 2.5em;
@@ -271,6 +285,7 @@ p {
   .share-icontwo {
     display: none;
   }
+
   .social {
     transform: translate(222px, -110px);
     background-color: var(--Very-Blue);
@@ -286,20 +301,24 @@ p {
     width: 40%;
     display: flex;
     justify-content: space-around;
+    cursor: pointer;
   }
+
   .social p {
     text-transform: uppercase;
     margin-left: 1em;
     letter-spacing: 4px;
   }
-
+  .social p:hover {
+    color: white;
+  }
   .triangulo-para-baixo {
     width: 0;
     height: 0;
     border-left: 15px solid transparent;
     border-right: 15px solid transparent;
     border-top: 15px solid hsl(217, 19%, 35%);
-    transform: translate(-82px, 160px);
+    transform: translate(-82px, 165px);
   }
   .hidden {
     display: none;
