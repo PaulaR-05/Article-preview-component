@@ -1,7 +1,7 @@
 const button = document.querySelector(".share-icon");
 const socialH = document.querySelector(".social");
 const shareIconTwo = document.querySelector(".triangulo-para-baixo");
-const return = 
+
 button.addEventListener("click", submit);
 
 function submit() {
